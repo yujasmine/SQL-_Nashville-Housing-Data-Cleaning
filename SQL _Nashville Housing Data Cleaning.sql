@@ -150,13 +150,12 @@ WITH RowNumCTE AS (
 SELECT *,	
 	ROW_NUMBER() OVER (
 	PARTITION BY ParcelID,
-				PropertyAddress,
-				SalePrice, 
-				SaleDate,
-				LegalReference
-				ORDER BY 
-					UniqueID
-					) row_num
+		     PropertyAddress,
+		     SalePrice, 
+		     SaleDate,
+		     LegalReference
+	ORDER BY UniqueID
+			) row_num
 FROM PortfolioProject.dbo.NashvilleHousing
 )
 DELETE 
