@@ -1,4 +1,4 @@
-# Python_Nashville Housing Data Cleaning
+# SQL_Nashville Housing Data Cleaning
 ### Background
 
 
